@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!--- <script src="js/jsonvideo2.js"></script>-->
+</head>
+<body>
+
+    <h2>Tutorial json</h2>
+
+    <div id="demo"></div>
+
+<script type="text/javascript">
+
+
+let mycars=[
+{"name":"Ford","model":["Feista","Focus","Mustang"]},
+{"name":"BMW","model":["320","x3","x5"]},
+{"name":"Fiat","model":["500","Panda"]}
+];
+
+let myobj = {
+    "name":"varan",
+    "age":30,
+    "cars":mycars
+};
+
+//var data = myobj.name + "whose age is" + myobj.age+ "holds these cars";
+
+let arreglo=myobj.cars;
+
+//console.log(arreglo);
+
+var data ="";
+
+for(i in arreglo){
+
+    data +="<h1>" + arreglo[i].name + "</h1>";
+    for(j in arreglo[i].model){
+       // console.log(arreglo[i].model[j]);
+       data +=arreglo[i].model[j] + " ";
+    }
+}
+
+
+document.getElementById("demo").innerHTML=data;
+
+/*let myobj = {
+
+"name":["vatan","farid","check"],
+"age":30,
+"car":{"car1":"fiat","car2":"mercedez","car3":"BMW"}
+};*/
+
+//console.log(myobj.name);
+
+/*let value="";
+for (x in myobj){
+    //console.log(myobj[x]);
+    value = value + myobj[x] + " " + "<br>";
+}
+
+document.getElementById("demo").innerHTML=value;*/
+
+/****1era FORMA********
+let arreglo = myobj.name;
+for (let index = 0; index < arreglo.length; index++) {
+    console.log(arreglo[index]);
+    
+}*/
+
+/*******2DA FORMA************/
+/*for (i in myobj.name) {
+    
+    console.log(myobj.name[i]);
+}*/
+
+
+
+</script>
+</body>
+
+</html>

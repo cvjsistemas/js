@@ -1,0 +1,54 @@
+*{
+    font-size: 20px;
+    margin:0px auto;
+}
+
+header{
+    background-color: aqua;
+    color: white;
+}
+
+button{
+    width: 100px;
+    height: 70px;
+    color: white;
+    background-color: red;
+}
+
+
+
+
+p{
+    color: blue;
+    /*background-color: yellow;*/
+}
+
+/*.miparrafo{
+    color: red;
+    background-color: aqua;
+}*/
+
+
+.parrafo{
+    color: orangered;
+    /*background-color: aqua;*/
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 5px;
+}
+
+.parrafolista{
+    color:green;
+}
+
+
+.amarillo{
+    color: yellow;
+    background-color: blue;
+}
+
+div#contenido{
+    margin: 5px;
+    border: 2px dotted;
+   /* background-color: brown;*/
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas COVID-19</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/covid.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Estadisticas del COVID-19</h1>
+        <b>Fecha</b> <input type="date" id="inputfecha" /><br>
+        <b>Pais</b>
+        <select id="selectpais">
+            <option value="Spain">España</option>
+            <option value="Germany">Alemania</option>
+            <option value="Peru">Peru</option>
+
+        </select><br>
+        <button id="btncargar">Cargar Estadisticas</button><br>
+        <ul>
+            <li>Confirmados <span id="today_confirmed"></span></li>
+            <li>Muertes <span id="today_deaths"></span></li>
+            <li>Pacientes hospitalizados con sintomas <span id="today_hospitalised_patients_with_symptoms"></span></li>
+            <li>Cuidados intensivos <span id="today_intensive_care"></span></li>
+            <li>Nuevos confirmados <span id="today_new_confirmed"></span></li>
+            <li>Nuevas muertes <span id="today_new_deaths"></span></li>
+            <li>Nuevos pacientes hospitalizados con sintomas<span id="today_new_hospitalised_patients_with_symptoms"></span></li>
+            <li>Nuevos cuidados intensivos<span id="today_new_intensive_care"></span></li>
+            <li>Nuevos casos abiertos <span id="today_new_open_cases"></span></li>
+            <li>Nuevos recuperados <span id="today_new_recovered"></span></li>
+            <li>Nuevos total de pacientes hospitalizados <span id="today_new_total_hospitalised_patients"></span></li>
+            
+
+        </ul>
+    </div>
+    
+</body>
+</html>

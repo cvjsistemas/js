@@ -1,0 +1,18 @@
+.contenedor{
+    border: 2px dashed #DDD;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: #b9ffe1;
+    color: #002d2c;
+    font-family: 'Courier New', Courier, monospace;
+    width: 600px;
+    margin: auto;
+}
+
+body{
+    background:#253e37;
+}
+
+span{
+    font-weight: bold;
+}
