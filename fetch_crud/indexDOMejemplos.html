@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style type="text/css">
+
+    .clase1{
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        margin-bottom: 10px;
+        margin-top: 5px;
+
+    }
+
+
+
+</style>
+
+</head>
+<body>
+
+    <button id="btnprueba">prueba</button>
+    <input type="text" id="input1" value="50">
+
+    <div class="clase1">caja 1</div>
+    <div class="clase1">caja 2</div>
+    
+    
+
+
+    <script type="text/javascript">
+
+        let boton = document.getElementById("btnprueba");
+        console.log(boton.innerHTML);
+
+        let input = document.getElementById("input1");
+        console.log(input.value);
+
+        let caja= document.getElementsByClassName("clase1");// trae un array de elementos
+        console.log(caja[0]);
+
+        caja[0].style.backgroundColor = 'blue';
+
+        //queryselector-> muestra el 1er elemento
+        let query =document.querySelector(".clase1");
+        console.log(query);
+
+        boton.addEventListener('click',()=>{
+            
+        });
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
